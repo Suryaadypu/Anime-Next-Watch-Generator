@@ -2,6 +2,12 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: white;
 }
 
 header {
@@ -11,9 +17,14 @@ header {
   padding: 20px;
 }
 
-#controls {
+#controls, #features {
   text-align: center;
-  margin: 20px;
+  margin: 15px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
 }
 
 button {
@@ -40,6 +51,11 @@ button:hover {
   background: white;
   border-radius: 5px;
   padding: 10px;
+  transition: 0.3s;
+}
+
+.dark .card {
+  background: #1e293b;
 }
 
 .card img {

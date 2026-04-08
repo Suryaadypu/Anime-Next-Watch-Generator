@@ -7,22 +7,46 @@
 </head>
 <body>
 
-  <header>
-    <h1>Anime Next Watch Generator</h1>
-    <p>Find your next anime to watch</p>
-  </header>
+<header>
+  <h1>Anime Next Watch Generator</h1>
+  <p>Find your next anime to watch</p>
+</header>
 
-  <main>
-    <div id="controls">
-      <button id="topBtn">Top Rated</button>
-      <button id="trendingBtn">Trending</button>
-    </div>
+<main>
 
-    <p id="loading">Loading anime...</p>
+  <!-- CATEGORY BUTTONS -->
+  <div id="controls">
+    <button id="topBtn">Top Rated</button>
+    <button id="trendingBtn">Trending</button>
+  </div>
 
-    <div id="animeContainer"></div>
-  </main>
+  <!-- FEATURES -->
+  <div id="features">
+    <input type="text" id="searchInput" placeholder="Search anime..." />
 
-  <script src="script.js"></script>
+    <select id="filterRating">
+      <option value="all">All Ratings</option>
+      <option value="8">Above 8 ⭐</option>
+      <option value="7">Above 7 ⭐</option>
+    </select>
+
+    <select id="sortOption">
+      <option value="default">Sort By</option>
+      <option value="asc">Rating ↑</option>
+      <option value="desc">Rating ↓</option>
+    </select>
+
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </div>
+
+  <!-- LOADING -->
+  <p id="loading">Loading anime...</p>
+
+  <!-- DATA -->
+  <div id="animeContainer"></div>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
